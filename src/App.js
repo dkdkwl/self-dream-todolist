@@ -46,7 +46,6 @@ const TodoContent = styled.div`
   height:100%;
   background-color:#22243a;
   padding:15px 30px;
-
 `;
 
 const TodoList = styled.ol`
@@ -65,7 +64,11 @@ const TodoList = styled.ol`
 
     label{
       display:flex;
-      align-items:center
+      width: calc(100% - 27px);      
+      align-items:center;
+      p{
+        width:100%
+      }
     }
     input{
       width:15px;
@@ -95,22 +98,25 @@ const TodoList = styled.ol`
   `;
 
   const TodoBottomAddInput = styled.div`
-  width:100%;
-  border-radius:10px;
-  overflow:hidden;
-  border:1px solid #666;
-  input{
-    border:none;
-    background-color:#fff;
-    font-size:1rem;
-    padding:4px 10px;
-    width:calc(100% - 70px);
-  }
-  button{
-    height:100%;
-    width:70px;
-    background-color:#ef852d;
-  }  
+    width:100%;
+    border-radius:7px;
+    overflow:hidden;
+    border:1px solid #666;
+    input{
+      border:none;
+      background-color:#fff;
+      font-size:1rem;
+      padding:4px 10px;
+      width:calc(100% - 70px);
+    }
+    button{
+      height:100%;
+      width:70px;
+      background-color:#ef852d;
+      font-size:1rem;
+      color:#000;
+      font-weight:500
+    }  
   `;
 
 
